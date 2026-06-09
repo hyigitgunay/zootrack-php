@@ -26,6 +26,7 @@ ZooTrack, Hayvanat Bahçesi yöneticilerinin ve bakıcılarının, hayvanların 
 3. `config.php` dosyasını açarak veritabanı bağlantı bilgilerinizi düzenleyin (Varsayılan: `localhost`, kullanıcı `root`, şifre boş).
 4. Tarayıcınızda `http://localhost/zootrack/login.php` adresine gidin. Veritabanı (`zootrack_db`) ve tablolar (`users`, `animals`) sisteme ilk girişte otomatik olarak oluşturulacaktır. Dilerseniz manuel kurulum için `db.sql` dosyasını veritabanınızda içe aktarabilirsiniz.
 
+🌐 **Canlı Demo:** [http://95.130.171.20/~st23360859060/](http://95.130.171.20/~st23360859060/)
 ---
 
 ## Ekran Görüntüleri
@@ -45,3 +46,4 @@ ZooTrack, Hayvanat Bahçesi yöneticilerinin ve bakıcılarının, hayvanların 
 Projenin özelliklerini, kod yapısını ve çalışmasını anlatan tanıtım videosuna aşağıdaki bağlantıdan ulaşabilirsiniz:
 
 (https://www.youtube.com/watch?v=x-FLN_oyF8w)
+
