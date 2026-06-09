@@ -1,0 +1,304 @@
+/* ZooTrack Custom CSS - High-End Dark Emerald Theme */
+
+:root {
+    --bg-dark: #090d16;
+    --bg-card: rgba(17, 24, 39, 0.85);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --emerald-primary: #10b981;
+    --emerald-hover: #059669;
+    --text-muted: #9ca3af;
+    --text-light: #f3f4f6;
+    --logout-red: #ef4444;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Background Glowing Effects */
+body::before {
+    content: '';
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(9, 13, 22, 0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    bottom: -10%;
+    right: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, rgba(9, 13, 22, 0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+/* Navbar Custom Styling */
+.navbar {
+    background: rgba(9, 13, 22, 0.8) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
+}
+
+.text-emerald {
+    color: var(--emerald-primary) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    opacity: 0.85;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--emerald-primary) !important;
+    opacity: 1;
+}
+
+/* Buttons */
+.btn-emerald {
+    background-color: var(--emerald-primary);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-emerald:hover {
+    background-color: var(--emerald-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-logout {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--logout-red);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: var(--logout-red);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-outline-light {
+    border-color: var(--border-color);
+    color: var(--text-light);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Glassmorphism Cards & Forms */
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(16, 185, 129, 0.15);
+    border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* Input Fields styling */
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--emerald-primary);
+    box-shadow: 0 0 0 0.25rem rgba(16, 185, 129, 0.15);
+    color: var(--text-light);
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+/* Status Badges */
+.badge-status {
+    padding: 0.5em 0.8em;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.badge-healthy {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-sick {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-treatment {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-quarantine {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Auth Pages Style */
+.auth-container {
+    max-width: 480px;
+    margin: 4rem auto;
+}
+
+.auth-title {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Footer Custom Styling */
+.footer {
+    border-top: 1px solid var(--border-color);
+    background: rgba(9, 13, 22, 0.95);
+}
+
+/* Animal Photo/Avatar Placeholder */
+.animal-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.animal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.glass-card-hover:hover .animal-img {
+    transform: scale(1.08);
+}
+
+.animal-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--emerald-primary);
+}
+
+/* Dashboard Statistics Cards */
+.stat-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Table styling for dark theme */
+.custom-table {
+    color: var(--text-light);
+}
+
+.custom-table th {
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.custom-table td {
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--emerald-primary);
+}

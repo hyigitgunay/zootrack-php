@@ -1,0 +1,14 @@
+# Deployment scripts and config
+deploy.ps1
+deploy.js
+deploy_raw.ps1
+list_ftp.js
+ftp_commands.txt
+config_prod.php
+
+# Uploads directory
+uploads/
+
+# OS generated files
+.DS_Store
+Thumbs.db
