@@ -31,10 +31,12 @@ ZooTrack, Hayvanat Bahçesi yöneticilerinin ve bakıcılarının, hayvanların 
 ## Ekran Görüntüleri
 
 ### 1. Giriş Sayfası (Login)
-*[Buraya Giriş Sayfası Ekran Görüntüsünü Ekleyiniz]*
+<img width="1916" height="1032" alt="image" src="https://github.com/user-attachments/assets/e5f88214-a9d9-4484-94d1-469c6a157bed" />
+
 
 ### 2. Yönetim Paneli (Dashboard / Liste)
-*[Buraya Liste & İstatistik Paneli Ekran Görüntüsünü Ekleyiniz]*
+<img width="1917" height="1057" alt="image" src="https://github.com/user-attachments/assets/786cee6a-167f-46cc-acd5-cb1baf6a7d70" />
+
 
 ---
 
@@ -42,4 +44,4 @@ ZooTrack, Hayvanat Bahçesi yöneticilerinin ve bakıcılarının, hayvanların 
 
 Projenin özelliklerini, kod yapısını ve çalışmasını anlatan tanıtım videosuna aşağıdaki bağlantıdan ulaşabilirsiniz:
 
-👉 **[Proje Tanıtım Videosu Bağlantısı (Youtube / Google Drive)]()**
+(https://www.youtube.com/watch?v=x-FLN_oyF8w)
